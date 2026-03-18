@@ -9,3 +9,19 @@
   unstage = reset HEAD --
   last = log -1 HEAD
 
+[user]
+	email = w.oumoulilte@enaa.ma
+	name = walid-hud
+[core]
+	editor = nvim
+[credential "https://github.com"]
+	helper = 
+	helper = !/usr/bin/gh auth git-credential
+[credential "https://gist.github.com"]
+	helper = 
+  helper = !/usr/bin/gh auth git-credential
+
+[diff]
+  tool = nvimdiff
+[difftool "nvimdiff"]
+  cmd = "nvim -d \"$LOCAL\" \"$REMOTE\""
