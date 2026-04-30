@@ -4,9 +4,9 @@ return {
     version = "*",
     config = true,
     keys = {
-      { "<leader>t",  "<cmd>ToggleTerm<cr>",                      desc = "Toggle terminal" },
-      { "<leader>ft", "<cmd>ToggleTerm direction=float<cr>",      desc = "Toggle floating terminal" },
-      { "<leader>vt", "<cmd>ToggleTerm direction=vertical<cr>",   desc = "Toggle vertical terminal" },
+      { "<leader>t", "<cmd>ToggleTerm<cr>", desc = "Toggle terminal" },
+      { "<leader>ft", "<cmd>ToggleTerm direction=float<cr>", desc = "Toggle floating terminal" },
+      { "<leader>vt", "<cmd>ToggleTerm direction=vertical<cr>", desc = "Toggle vertical terminal" },
       { "<leader>ht", "<cmd>ToggleTerm direction=horizontal<cr>", desc = "Toggle horizontal terminal" },
     },
     opts = {

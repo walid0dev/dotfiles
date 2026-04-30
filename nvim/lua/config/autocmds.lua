@@ -6,3 +6,9 @@
 --
 -- Or remove existing autocmds by their group name (which is prefixed with `lazyvim_` for the defaults)
 -- e.g. vim.api.nvim_del_augroup_by_name("lazyvim_wrap_spell")
+vim.api.nvim_create_autocmd("LspAttach", {
+  callback = function(args)
+    -- This prevents the assertion error by disabling the native color highlighter
+    vim.lsp.document_color.enable(false, { bufnr = args.buf })
+  end,
+})
