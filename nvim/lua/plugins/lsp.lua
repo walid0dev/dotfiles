@@ -3,7 +3,6 @@ return {
   opts = {
     servers = {
       tailwindcss = {
-        -- 1. Add the filetypes you want the LSP to attach to
         filetypes = {
           "html",
           "javascript",
@@ -19,7 +18,13 @@ return {
           settings = {
             typescript = {
               tsserver = {
-                maxTsServerMemory = 8192, -- Bump to 8GB (or 4096 for 4GB)
+                maxTsServerMemory = 8192,
+              },
+            },
+            vtsls = {
+              watchFiles = {
+                -- Exclude .next and node_modules from file watching
+                exclude = { "**/node_modules/**", "**/.next/**", "**/dist/**" },
               },
             },
           },
